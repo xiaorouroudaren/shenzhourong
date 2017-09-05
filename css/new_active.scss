@@ -1,0 +1,151 @@
+@charset "UTF-8";
+*{
+  padding: 0;
+  margin: 0 auto;
+  font-family: "微软雅黑";
+}
+a{
+  text-decoration: none;
+}
+#new_active_middle a:hover{
+  color: #399BC4;
+}
+ul{
+  list-style-type: none;
+}
+$fontColor:#399BC4;
+$borderColor:#e2e2e2;
+/*主体部分左边导航部分样式*/
+#new_active_middle{
+  width: 1200px;
+  height: auto;
+  margin: 100px auto;
+}
+#new_active_middle_left{
+  width: 306px;
+  height: auto;
+  float: left;
+}
+.new_active_sidenav{
+  width: 304px;
+  border: 1px solid $borderColor;
+  li{
+    width: 294px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid $borderColor;
+    background: #EEEEEE;
+  }
+  a{
+    color:dimgrey;
+  }
+}
+.new_active_sidenav_content{
+  width: 304px;
+  ul{
+    width: 304px;
+  }
+  li{
+    padding-left: 10px;
+    width: 294px;
+    height: 28px;
+    font-size: 14px;
+    color: gray;
+    a{
+      color: gray;
+    }
+  }
+  span{
+    display: block;
+    width: 293px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+    margin: 30px 0 20px ;
+    padding-left: 10px;
+    background: #EEEEEE;
+    border: 1px solid gainsboro;
+    a{
+      color: gray;
+    }
+  }
+}
+/*主体部分右边样式*/
+#new_active_middle_right{
+  width: 838px;
+  height: auto;
+  float: left;
+  margin-left: 10px;
+  margin-right: 30px;
+  li{
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+}
+.new_active_listimg{
+  width: 838px;
+  height: 258px;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 258px;
+    transition:all 0.6s;
+    -webkit-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+  }
+  &:hover img{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+  }
+}
+
+.new_active_listtitle{
+  width: 838px;
+  height: 20px;
+  margin: 20px 0 20px;
+  font-size: 18px;
+  a{
+    color: #525252;
+  }
+}
+.new_active_listinfo{
+  width: 838px;
+  height:auto;
+  line-height: 25px;
+  color: #747474;
+  font-size: 12px;
+  a{
+    color: #747474;
+  }
+}
+/*页表样式*/
+#new_active_middle_pages{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 35px 0 60px;
+  font-size: 12px;
+  a{
+    display: inline-block;
+    width:auto;
+    height: 18px;
+    padding: 5px;
+    color: #707070;
+    &:hover{
+      background: $fontColor;
+      color: white;
+    }
+  }
+}
+.new_active_middle_currentpage{
+  background:$fontColor ;
+  a{
+    color: white;
+  }
+}

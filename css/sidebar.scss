@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*侧边悬浮*/
+#sidebar {
+  position: fixed;
+  right: 10px;
+  top: 35%;
+  width: 60px;
+  z-index: 9999;
+  ul{
+    li{
+      list-style-type: none;
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border: 1px solid #2597ba;
+      background: #fff;
+      margin-bottom: 5px;
+      a {
+        display: block;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+/*电话*/
+#sidebar ul .list1{
+  background: #ffffff url("../img/about_images/icon16.png") no-repeat center;}
+/*微信*/
+#sidebar ul .list2{
+  background: #ffffff url("../img/about_images/icon17.png") no-repeat center;}
+/*QQ*/
+#sidebar ul .list3{
+  background: #ffffff url("../img/about_images/icon18.png") no-repeat center;}
+/*回到顶部*/
+#sidebar ul .list4{
+  display: none;
+  background: #ffffff url("../img/about_images/icon19.png") no-repeat center;}
+
+#sidebar .list_none1{
+  display: none;
+  position: absolute;
+  top: -1px;
+  right: 60px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  width: 190px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  color: #2597ba;
+  background: #fff;
+  border: 1px solid #3D9EBC;
+  border-right: none;
+}
+
+#sidebar .list1:hover{
+  background: #fff url("../img/about_images/icon20dzf.png") no-repeat center;
+  border-left: none;
+}
+
+#sidebar li:hover .list_none1 {
+  display: block;
+}
+
+#sidebar .list_none2{
+  display: none;
+  position: absolute;
+  top: -68px;
+  right: 68px;
+  width: 123px;
+  height: 123px;
+  background: url("../img/about_images/icon20dzf.png") no-repeat center;
+  border: 1px solid #3D9EBC;
+}
+
+.list_none2 img {
+  width: 123px;
+  height: 123px;
+}
+
+#sidebar li:hover .list_none2 {
+  display: block;
+}
+
+#sidebar .list2:hover {
+  background: #ffffff url("../img/about_images/icon21dzf.png") no-repeat center;
+}
+
+#sidebar .list3:hover{
+  background: #ffffff url("../img/about_images/icon18dzf.png") no-repeat center;
+}
+
+#sidebar .list4:hover{
+  background: #ffffff url("../img/about_images/icon19_dzf.png") no-repeat center;
+}

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/*client头部*/
+
+#head {
+  width: 100%;
+  height: auto;
+  #top_img{
+    width: 100%;
+    height: 358px;
+    img{
+      width: 100%;
+      height: 358px;
+    }
+  }
+}
+/*首页图片*/
+
+/*首页导航*/
+nav{
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  top:0;
+  z-index: 999;
+  #nav {
+    width: 1200px;
+    line-height: 60px;
+    height: 60px;
+    cursor: pointer;
+    .nav_logo {
+      float: left;
+      width: 145px;
+      height: 45px;
+      margin-top: 10px;
+    }
+    .nav_list {
+      float: right;
+      list-style-type: none;
+      width: 720px;
+      height: 60px;
+      li {
+        float: left;
+        width: 110px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        a{
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/*二级菜单*/
+.second-menu {
+  display: none;
+  list-style-type: none;
+  width: 135px;
+  text-align: center;
+  background: #fff;
+  opacity: .7;
+  li {
+    height: 32px;
+    line-height: 30px;
+    a{
+      color: #434242;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    &:hover {
+      background: #3D9EBC;
+    }
+  }
+}
+
+.nav_list > li:hover .second-menu {
+  display: block;
+}

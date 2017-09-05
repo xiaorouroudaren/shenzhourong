@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+}
+
+a {
+  text-decoration: none;
+}
+
+/*client主体*/
+#client_main {
+  margin: auto;
+  width: 100%;
+  .client_case {
+    height: 410px;
+    padding-top: 60px;
+    background-color: #eeeeee;
+    .client_case_content {
+      height: 410px;
+      width: 1200px;
+      margin: auto;
+      @at-root .client_pic {
+        width: 500px;
+        height: 300px;
+        float: right;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        background: no-repeat center;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+/*案例A图片*/
+#client_pic_1 {
+  background-image: url("../img/client_images/01 _2.jpg");
+}
+
+/*案例C图片*/
+#client_pic_2 {
+  background-image: url("../img/client_images/01 _3.jpg");
+}
+/*图片点击放大*/
+.client_pic:hover {
+  background-size: 110%;
+}
+/*案例文字*/
+.client_text {
+  float: left;
+  width: 600px;
+}
+
+.client_text_title{
+  a {
+    color: #2597ba;
+    font-size: 26px;
+    line-height: 80px;
+  }
+}
+
+.client_text_explain{
+  a {
+    color: #535353;
+    font-size: 12px;
+    line-height: 30px;
+  }
+}
+.client_text_point{
+  a {
+    color: black;
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+/*中间白色部分样式*/
+#client_white {
+  background-color: white;
+  #client_white_text {
+    float: right;
+    width: 600px;
+  }
+  #client_white_pic {
+    float: left;
+  }
+}
+
+/*页码翻页*/
+#client_page {
+  margin: 20px auto;
+  text-align: center;
+  span {
+    color: black;
+    &:hover {
+      background: #2597ba;
+      color: white;
+    }
+  }
+}

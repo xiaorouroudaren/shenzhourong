@@ -1,0 +1,581 @@
+@charset "UTF-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Microsoft YaHei"; }
+
+a {
+  text-decoration: none; }
+
+/*首页头部*/
+#index_head {
+  width: 100%;
+  height: auto; }
+
+/*轮播显示*/
+#index_scroll {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 560px;
+  cursor: pointer; }
+
+/*轮播图片集合*/
+#img_list {
+  position: absolute;
+  left: 0;
+  width: 5706px;
+  height: 560px;
+  -webkit-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left; }
+  #img_list li {
+    list-style-type: none;
+    float: left; }
+  #img_list img {
+    width: 1902px;
+    height: 560px; }
+
+/*轮播底部按钮*/
+#buttons {
+  position: absolute;
+  left: 930px;
+  bottom: 20px; }
+  #buttons span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%; }
+  #buttons .on {
+    background: #f00; }
+
+/*轮播左右箭头*/
+.arrow {
+  display: none;
+  position: absolute;
+  top: 200px;
+  width: 30px;
+  height: 50px; }
+
+#index_scroll:hover .arrow {
+  display: block; }
+
+#prev {
+  left: 50px;
+  background: url("../img/first_images/prev.png") no-repeat; }
+
+#next {
+  right: 50px;
+  background: url("../img/first_images/next.png") no-repeat; }
+
+/*轮播结束*/
+/*首页导航*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 60px;
+  z-index: 999; }
+
+#index_nav {
+  width: 1200px;
+  line-height: 60px;
+  height: 60px;
+  cursor: pointer; }
+
+.index_nav_logo {
+  float: left;
+  width: 145px;
+  height: 45px;
+  margin-top: 10px; }
+
+.index_nav_list {
+  float: right;
+  list-style-type: none;
+  width: 675px;
+  height: 60px; }
+  .index_nav_list li {
+    float: left;
+    width: 110px;
+    height: 60px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center; }
+    .index_nav_list li a {
+      color: #fff; }
+  .index_nav_list li:hover .index_second-menu {
+    display: block; }
+
+/*二级菜单*/
+.index_second-menu {
+  display: none;
+  list-style-type: none;
+  width: 135px;
+  text-align: center;
+  background: #fff;
+  opacity: .8; }
+  .index_second-menu li {
+    height: 32px;
+    line-height: 30px; }
+    .index_second-menu li a {
+      color: #434242;
+      font-size: 14px; }
+  .index_second-menu li:hover {
+    background: #3D9EBC; }
+
+/*官方动态*/
+#official {
+  width: 1902px;
+  height: 35px; }
+
+#official_news {
+  position: relative;
+  width: 1200px;
+  height: 35px; }
+  #official_news a {
+    text-decoration: none;
+    color: #434242;
+    margin-right: 40px;
+    line-height: 35px; }
+  #official_news a:hover {
+    color: #399BC4; }
+
+/*官方动态小图标*/
+#index_news_official {
+  padding-left: 20px;
+  display: inline-block;
+  float: left;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  background: url("../img/first_images/news.png") no-repeat 0 center; }
+
+#index_news_details_all {
+  width: 1000px;
+  height: 35px;
+  overflow: hidden;
+  position: relative; }
+
+#index_news_details {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 1100px;
+  height: 105px;
+  transition: all 0.5s ease-in-out; }
+
+#official_news li {
+  list-style-type: none;
+  line-height: 35px; }
+
+/*更多动态*/
+#index_news_more {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 35px; }
+
+#index_official_dynamic span a {
+  color: #434242;
+  cursor: pointer; }
+#index_official_dynamic a:hover {
+  color: #3D9EBC; }
+
+/*首页主体部分*/
+/*风控无人机轮播*/
+#index_container {
+  width: 100%;
+  height: auto; }
+
+#container_main {
+  margin-top: 60px;
+  width: 1200px; }
+
+/*风控无人机 切换按钮*/
+.container_head {
+  width: 1200px;
+  height: 150px; }
+
+.section_title {
+  float: left;
+  margin-left: 50px;
+  width: 170px;
+  height: 155px;
+  cursor: pointer; }
+  .section_title dt {
+    width: 170px;
+    height: 120px; }
+  .section_title dd {
+    text-align: center; }
+  .section_title a {
+    color: #959595;
+    font-size: 18px;
+    line-height: 35px; }
+
+/*添加背景图*/
+.section1 {
+  background: url("../img/first_images/icon2-2.png") no-repeat center; }
+
+.section2 {
+  background: url("../img/first_images/icon3-3.png") no-repeat center; }
+
+.section3 {
+  background: url("../img/first_images/icon102.png") no-repeat center; }
+
+.section4 {
+  background: url("../img/first_images/icon5-5.png") no-repeat center; }
+
+.section5 {
+  background: url("../img/first_images/icon1-5.png") no-repeat center; }
+
+/*通过改变父级元素的id 切换背景图*/
+#on_section .section1 {
+  background: url("../img/first_images/icon1.png") no-repeat center; }
+
+#on_section .section2 {
+  background: url("../img/first_images/icon2.png") no-repeat center; }
+
+#on_section .section3 {
+  background: url("../img/first_images/icon3.png") no-repeat center; }
+
+#on_section .section4 {
+  background: url("../img/first_images/icon4.png") no-repeat center; }
+
+#on_section .section5 {
+  background: url("../img/first_images/icon5.png") no-repeat center; }
+
+/*板块详情*/
+#section_details {
+  overflow: hidden;
+  position: relative;
+  width: 1200px;
+  height: 578px;
+  background: url("../img/first_images/bg1.png"); }
+
+#section_list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+  width: 6020px;
+  height: 480px;
+  list-style-type: none; }
+  #section_list li {
+    float: left;
+    width: 1200px;
+    height: 480px; }
+
+.section_img {
+  float: left;
+  width: 470px;
+  height: 360px; }
+
+/*板块介绍*/
+.section_introduce {
+  position: relative;
+  margin: 0 50px;
+  float: right;
+  width: 630px;
+  height: 480px; }
+  .section_introduce p {
+    width: 100%;
+    height: 135px;
+    line-height: 35px;
+    color: #535353;
+    font-size: 18px; }
+  .section_introduce a {
+    display: block;
+    position: absolute;
+    top: 380px;
+    left: 0;
+    width: 187px;
+    height: 47px;
+    line-height: 47px;
+    font-size: 18px;
+    color: #fff;
+    background: #edab00;
+    text-align: center; }
+  .section_introduce a:hover {
+    background: #f60; }
+
+/*板块名称*/
+.section_name {
+  display: block;
+  line-height: 45px;
+  font-size: 36px;
+  color: #2597ba;
+  margin-bottom: 30px; }
+
+/*风控无人机轮播结束*/
+/*客户案例样式开始*/
+/*轮播样式*/
+#index-customer-case {
+  width: 100%;
+  padding: 65px 0 80px 0;
+  background: #eee; }
+
+.index-case-p1 {
+  font-size: 30px;
+  color: #399BC4;
+  margin-bottom: 32px;
+  text-align: center; }
+
+.index-case-p2 {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 45px; }
+
+#index-case-content {
+  width: 1200px;
+  height: 462px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+
+#index-case-img {
+  width: 3600px;
+  height: 462px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left; }
+
+.index-case-a {
+  position: relative;
+  width: 1200px;
+  height: 462px;
+  float: left;
+  background: url("../img/first_images/018.jpg"); }
+
+.index-case-b {
+  float: left;
+  width: 1200px;
+  height: 462px;
+  background: url("../img/first_images/019.jpg"); }
+
+.index-case-c {
+  float: left;
+  width: 1200px;
+  height: 462px;
+  background: url("../img/first_images/020.jpg"); }
+
+#index-case-radius {
+  position: absolute;
+  left: 556px;
+  top: 420px; }
+  #index-case-radius span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 100; }
+  #index-case-radius .on {
+    background: gray; }
+
+.index-trans {
+  text-decoration: none;
+  color: white;
+  font-size: 70px;
+  display: none; }
+
+#index-trans_left {
+  position: absolute;
+  top: 197px; }
+
+#index-trans_right {
+  position: absolute;
+  top: 200px;
+  left: 1148px; }
+
+/*控制左右箭头的隐藏与出现*/
+#index-case-content:hover .index-trans {
+  display: block; }
+
+/*案例内容样式*/
+.index-case-example {
+  display: block;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 98px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #fff; }
+
+.index-case-example-content {
+  margin-left: 0;
+  width: 310px;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 70px;
+  line-height: 30px; }
+
+.index-check {
+  display: block;
+  width: 185px;
+  height: 53px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 53px;
+  margin: 45px 0 0 70px;
+  font-size: 18px;
+  color: #fff; }
+
+/*客户案例样式结束*/
+/*CEO样式开始*/
+#index_boss {
+  width: 100%;
+  height: 430px;
+  background: url("../img/first_images/bg22.jpg") no-repeat center; }
+
+#index_boss_item {
+  width: 1200px;
+  padding-top: 65px; }
+
+.index_boss_ul {
+  height: 180px;
+  list-style-type: none;
+  margin-bottom: 10px; }
+  .index_boss_ul li {
+    width: 112px;
+    height: 175px;
+    float: left;
+    margin-left: 70px;
+    margin-right: 55px;
+    font-size: 14px;
+    cursor: pointer; }
+  .index_boss_ul img {
+    border: 4px solid rgba(254, 254, 254, 0);
+    border-radius: 50%; }
+
+.index_boss_info {
+  text-align: center;
+  line-height: 30px;
+  color: white; }
+
+/*CEO切换样式开始*/
+.index_boss_sub {
+  width: 1200px;
+  display: none;
+  color: #F19149;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 30px; }
+
+.index_boss_li:hover .index_boss_sub {
+  color: #F19149; }
+
+#index_boss_sub_first {
+  display: block; }
+
+#on_boss .index_boss_info {
+  color: #F19149; }
+
+#on_boss .index_boss_li_img {
+  border: 4px solid #F19149; }
+
+/*CEO样式结束*/
+/*最新动态样式开始*/
+#index_news {
+  width: 100%;
+  height: 530px;
+  background: #ffffff; }
+
+#index_news_content {
+  width: 1200px;
+  height: auto;
+  padding-top: 110px; }
+  #index_news_content p {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 22px;
+    color: #399BC4; }
+  #index_news_content a {
+    color: gray; }
+  #index_news_content a:hover {
+    color: #399BC4; }
+  #index_news_content ul {
+    list-style-type: none; }
+
+#index_news_nav {
+  width: 800px;
+  float: left; }
+
+.index_news_title {
+  padding-bottom: 35px; }
+  .index_news_title li {
+    float: left;
+    font-size: 14px;
+    margin-right: 47px; }
+
+.index_news_item {
+  background: #399BC4; }
+  .index_news_item li {
+    float: left;
+    width: 400px;
+    line-height: 55px;
+    font-size: 14px; }
+
+#index_news_right {
+  float: left;
+  width: 80px; }
+  #index_news_right span {
+    font-size: 20px;
+    color: gray; }
+  #index_news_right img {
+    float: left;
+    width: 375px;
+    height: 160px;
+    margin-top: 46px; }
+
+.index_news_item {
+  display: none; }
+
+#index_news_item_first {
+  display: block; }
+
+#index-more a {
+  font-size: 14px;
+  display: block;
+  line-height: 48px; }
+
+/*最新动态样式结束*/
+/*合作伙伴样式开始*/
+.partner {
+  width: 100%;
+  height: auto;
+  background: #eee;
+  padding: 60px 0 230px; }
+
+.partnerInfo {
+  width: 1200px; }
+  .partnerInfo span {
+    font-size: 36px;
+    color: #2597ba;
+    line-height: 60px;
+    display: block;
+    text-align: center;
+    padding-bottom: 46px; }
+  .partnerInfo ul {
+    list-style-type: none; }
+  .partnerInfo li {
+    width: 113px;
+    float: left;
+    border: 2px solid transparent;
+    margin-right: 15px;
+    margin-bottom: 28px; }
+  .partnerInfo img {
+    border: 2px solid rgba(255, 255, 255, 0); }
+    .partnerInfo img:hover {
+      border: 2px solid #2597ba; }
+
+/*合作伙伴样式结束*/
+/*首页脚部*/
+
+/*# sourceMappingURL=index.css.map */
